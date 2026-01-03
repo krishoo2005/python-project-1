@@ -1,7 +1,7 @@
 #day11 functions and dictionaries code basic level
 
 def show_skills(skills):
-    print("\n...my skills,,,")
+    print("\n...my skills...")
     for skill , level in skills.items():
         print(skill,"*",level,"/10")
 
@@ -36,3 +36,4 @@ print("\n Average skill level",avg)
 
 skill_name , skill_level = best_skills(skills)
 print("best skill :",skill_name,"with level",skill_level)
+
