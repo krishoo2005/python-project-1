@@ -1,0 +1,33 @@
+# Day 12: Lists + Functions (Basic Practice)
+
+def show_tasks(tasks):
+    print("\nMy Daily Tasks:")
+    for i in range(len(tasks)):
+        print(i + 1, "-", tasks[i])
+
+
+def add_task(tasks, new_task):
+    tasks.append(new_task)
+    print("\nTask added:", new_task)
+
+
+def remove_task(tasks, task_name):
+    if task_name in tasks:
+        tasks.remove(task_name)
+        print("\n Task removed:", task_name)
+    else:
+        print("\nTask not found")
+
+
+# ---- Main Program ----
+tasks = ["Python practice", "AWS learning", "DSA basics"]
+
+show_tasks(tasks)
+
+add_task(tasks, "Linux revision")
+show_tasks(tasks)
+
+remove_task(tasks, "DSA basics")
+show_tasks(tasks)
+
+print("\nTotal tasks:", len(tasks))
